@@ -2,7 +2,10 @@ import { getGifs } from "../../src/helpers/getGifs";
 
 describe("Test of getGifs()", () => {
   test("should return an array of GIFs", async () => {
+    //Arrange
+    //Act
     const gifs = await getGifs("Valorant");
+    //Assert
     expect(gifs.length).toBeGreaterThan(0);
     expect(gifs[0]).toEqual({
       id: expect.any(String),
