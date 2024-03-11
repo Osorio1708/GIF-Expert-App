@@ -40,7 +40,6 @@ describe("Tests on <GifGrif/>", () => {
     //Act
     render(<GifGrid category={category} />);
     //Assert
-    screen.debug();
     expect(screen.getAllByRole("img").length).toBe(2);
   });
 });
